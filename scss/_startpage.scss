@@ -76,10 +76,25 @@ html {
                 border-radius: 5px;
                 margin-top: 15px;
 
-                .bi-quote {
+                &--icon {
                     @include mixins.quote;
                 }
             }
+        }
+    }
+
+    .footer {
+        width: 100%;
+        background-color: black;
+        &__adress {
+
+        }
+        &__contact {
+
+
+        }
+        &__socialmedia {   
+
         }
     }
 }

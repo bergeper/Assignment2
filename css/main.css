@@ -76,11 +76,14 @@ html {
   border-radius: 5px;
   margin-top: 15px;
 }
-.wrapper .main--content .team__desc .bi-quote {
+.wrapper .main--content .team__desc--icon {
   transform: rotate(180deg);
   font-size: 40px;
 }
-
+.wrapper .footer {
+  width: 100%;
+  background-color: black;
+}
 .btn-arrow {
   text-decoration: none;
   font-size: 40px;
