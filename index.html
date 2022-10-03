@@ -4,26 +4,62 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <!-- My Own CSS -->
     <link href="css/main.css" rel="stylesheet" />
     <title>Uppgift 2</title>
   </head>
   <body>
     <div class="wrapper">
       <header class="hero">
-        <nav class="hero__nav">sas</nav>
+        <nav class="hero__nav"></nav>
         <div class="hero__titel">
           <h2 class="hero__titel--bold">Welcome to nature</h2>
-          <h2 class="">A journey through time and sheep</h2>
-          <h2 class="">To see how ...cotton ... is mage, made I mean...</h2>
+          <h2 class="hero__titel--sm">A journey through time and sheep</h2>
+          <h2 class="hero__titel--sm">
+            To see how ...cotton ... is mage, made I mean...
+          </h2>
         </div>
+        <a href="#about" class="btn-arrow">
+          <i class="bi bi-arrow-down-circle-fill btn-white"></i>
+        </a>
       </header>
-      <main class="container">
+      <main id="about" class="main--content">
         <h2>Träffa laget</h2>
         <div class="team">
-          <h2 class="team__name"></h2>
-          <section class="team__image"></section>
-          <section class="team__desc"></section>
+          <h3 class="team__name">Rakib</h3>
+          <img src="assets/profiles/Rakib_Square.png" class="team__image"></img>
+          <section class="team__desc">
+            <p><i class="bi bi-quote"></i>Rakib är vår vassaste node-utvecklare och håller ständigt ett öga på nya tekniker</p>
+          </section>
         </div>
+        <div class="team">
+          <h3 class="team__name">Alexandra</h3>
+          <img src="assets/profiles/Alexandra_Square.png" class="team__image" alt="En bild på Alexandra, vår "></img>
+          <section class="team__desc">
+            <p><i class="bi bi-quote"></i>Alexandra håller reda på alla överallt och ser till att det flyter</p>
+          </section>
+        </div>
+        <div class="team">
+          <h3 class="team__name">Lasse</h3>
+          <img src="assets/profiles/NoPerson_Square.png" class="team__image" alt="En personikon"></img>
+          <section class="team__desc">
+            <p><i class="bi bi-quote"></i>Gör övriga saker... mestadels ...</p>
+          </section>
+        </div>
+        <div class="team">
+          <h3 class="team__name">Sebastian</h3>
+          <img src="assets/profiles/Sebastian_Square.png" class="team__image" alt="En bild på Sebastian, vår lärare"></img>
+          <section class="team__desc">
+            <p><i class="bi bi-quote"></i>En av våra utbildare som har stor erfarenhet av ganska många saker.</p>
+          </section>
+        </div>
+        <a href="#contact" class="btn-arrow">
+          <i class="bi bi-arrow-down-circle-fill btn-black"></i>
+        </a>
       </main>
       <footer></footer>
     </div>
