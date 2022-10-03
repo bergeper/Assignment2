@@ -8,6 +8,7 @@ html {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    width: 100%;
 
     
     .hero {
@@ -53,48 +54,34 @@ html {
         }
     }
 
-    .main--content {
-        min-height: 100vh;
+    main {
+        text-align: center;
+    }
+
+    .team {
         display: flex;
         flex-direction: column;
         align-items: center;
-
-        .team {
-            text-align: center;
-            width: 90%;
-            margin-top: 10px;
-            &__image {
-                height: auto;
-                width: 70%;
-                border-radius: 50%;
-                box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.411);
-                
-            }
-            &__desc {
-                background-color: rgb(218, 218, 218);
-                padding: 30px;
-                border-radius: 5px;
-                margin-top: 15px;
-
-                &--icon {
-                    @include mixins.quote;
-                }
-            }
-        }
+        text-align: center;
+        @include mixins.people;
     }
+    
 
     .footer {
         width: 100%;
         background-color: black;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         &__adress {
-
+            margin: 10px;
         }
         &__contact {
-
-
+            margin: 10px;
         }
         &__socialmedia {   
-
+            margin: 10px;
         }
     }
 }
