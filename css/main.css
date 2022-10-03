@@ -1,0 +1,48 @@
+html {
+  font-family: "Times new roman", Arial, serif;
+  font-size: 14pt;
+}
+
+body {
+  margin: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.wrapper .hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  height: 100vh;
+  background-image: url(../assets/negative-space-black-forest-dawn.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.wrapper .hero__nav {
+  color: white;
+  top: 0;
+  height: 60px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.wrapper .hero__titel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.wrapper .hero__titel--bold {
+  font-weight: bold;
+  font-size: 1.8em;
+}
+
+/*# sourceMappingURL=main.css.map */
