@@ -7,15 +7,19 @@ body {
   margin: 0;
 }
 
-.btn-arrow {
-  text-decoration: none;
-  font-size: 40px;
+.anchor--arrow {
+  width: 100%;
+  text-align: center;
   margin-bottom: 40px;
 }
-.btn-arrow .btn-white {
+.anchor--arrow .btn-arrow {
+  text-decoration: none;
+  font-size: 40px;
+}
+.anchor--arrow .btn-arrow .btn-white {
   color: white;
 }
-.btn-arrow .btn-black {
+.anchor--arrow .btn-arrow .btn-black {
   color: black;
 }
 
@@ -24,8 +28,6 @@ html {
 }
 
 .wrapper {
-  display: flex;
-  flex-direction: column;
   min-height: 100vh;
   width: 100%;
 }
@@ -66,7 +68,7 @@ html {
   margin-left: 20px;
   margin-right: 20px;
 }
-.wrapper main {
+.wrapper .container {
   text-align: center;
   margin: 20px 0px 20px 0px;
 }
@@ -91,6 +93,7 @@ html {
   border-radius: 10px;
   margin: 15px 15px 0px 15px;
   width: 75%;
+  min-height: 100px;
 }
 .wrapper .team__desc--icon {
   transform: rotate(180deg);
@@ -103,6 +106,7 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0;
 }
 .wrapper .footer .contact__info {
   list-style-type: none;
@@ -111,6 +115,60 @@ html {
 }
 .wrapper .footer .contact__info * {
   margin: 5px;
+}
+@media screen and (min-width: 768px) {
+  .wrapper .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .wrapper .container__titel {
+    width: 100%;
+  }
+  .wrapper .container .team {
+    text-align: center;
+    width: 100%;
+    margin: 60px 0 60px 0;
+    width: 50%;
+  }
+  .wrapper .container .team__image {
+    height: auto;
+    width: 70%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.411);
+  }
+  .wrapper .container .team__desc {
+    background-color: rgb(218, 218, 218);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 15px 15px 0px 15px;
+    width: 75%;
+    min-height: 100px;
+  }
+  .wrapper .container .team__desc--icon {
+    transform: rotate(180deg);
+    font-size: 50px;
+  }
+  .wrapper .footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+  .wrapper .footer .contact {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  .wrapper .footer .contact__info {
+    width: 25%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
