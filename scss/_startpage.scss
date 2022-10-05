@@ -14,32 +14,30 @@ html {
   @include mixins.hero;
 }
 
-.navbar {
-  @include mixins.navbar;
+.nav {
+  @include mixins.nav;
+  @include mixins.tablet {
+    &__toggle {
+      display: none;
+    }
+
+    &__menu {
+      flex-direction: row;
+      float: right;
+      margin: 15px;
+
+      li {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
 }
 
 .container {
   text-align: center;
   margin: 20px 0px 20px 0px;
-}
-
-.team {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  @include mixins.team;
-}
-
-.footer {
-  @include mixins.footer;
-  .contact__info {
-    @include mixins.lists;
-  }
-}
-// Tablet
-@include mixins.tablet {
-  .container {
+  @include mixins.tablet {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -49,15 +47,29 @@ html {
       width: 100%;
     }
   }
+  @include mixins.desktop {
+    display: flex;
+    margin: 0 auto;
+    width: 70%;
+  }
+}
 
-  .team {
+.team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  @include mixins.team;
+  @include mixins.tablet {
     @include mixins.team;
     width: 50%;
   }
+}
 
-  .footer {
-    @include mixins.footer;
-    .contact {
+.footer {
+  @include mixins.footer;
+  .contact {
+    @include mixins.tablet {
       display: flex;
       flex-direction: row;
       align-items: top;
@@ -68,12 +80,7 @@ html {
       }
     }
   }
-}
-
-@include mixins.desktop {
-  .container {
-    display: flex;
-    margin: 0 auto;
-    width: 70%;
+  .contact__info {
+    @include mixins.lists;
   }
 }
