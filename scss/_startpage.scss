@@ -17,6 +17,10 @@ html {
 .nav {
   @include mixins.nav;
   @include mixins.tablet {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
     &__toggle {
       display: none;
     }
@@ -25,6 +29,7 @@ html {
       flex-direction: row;
       float: right;
       margin: 15px;
+      gap: 30px;
 
       li {
         display: block;
