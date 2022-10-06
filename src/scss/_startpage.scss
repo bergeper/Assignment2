@@ -55,11 +55,17 @@ html {
 
     &__titel {
       width: 100%;
+      margin-top: 5vh;
     }
   }
   @include mixins.desktop {
     margin: 0 auto;
     width: 80%;
+
+    &__titel {
+      width: 100%;
+      margin-top: 10vh;
+    }
   }
 }
 
