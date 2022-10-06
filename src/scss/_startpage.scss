@@ -55,7 +55,7 @@ html {
   @include mixins.desktop {
     display: flex;
     margin: 0 auto;
-    width: 70%;
+    width: 80%;
   }
 }
 
@@ -63,7 +63,6 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
   @include mixins.team;
   @include mixins.tablet {
     @include mixins.team;

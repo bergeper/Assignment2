@@ -61,18 +61,16 @@
   }
   &__desc {
     background-color: v.$bg-team;
-    padding: 20px;
     border-radius: 5px;
+    padding: 20px;
     margin: 15px 10px 10px 10px;
     width: 75%;
     text-align: left;
     min-height: 100px;
     &--icon {
+      display: inline-block;
       transform: rotate(180deg);
       font-size: 50px;
-      padding: 0px;
-      margin: 0px;
-      display: inline-block;
     }
   }
 }
