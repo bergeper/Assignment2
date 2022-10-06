@@ -123,7 +123,7 @@
       position: absolute;
       display: block;
       border-radius: 5px;
-      transition: all 0.5s cubic-bezier(1, 0, 0, 1);
+      transition: all 0.5s v.$menu-animation;
     }
     // Position of the "the other two lines"
     &::before {
@@ -180,7 +180,7 @@
   }
 
   #nav__checkbox ~ label.nav__toggle {
-    transition: all 0.5s cubic-bezier(1, 0, 0, 1);
+    transition: all 0.5s v.$menu-animation;
   }
 
   #nav__checkbox:checked ~ ul.nav__menu li {
