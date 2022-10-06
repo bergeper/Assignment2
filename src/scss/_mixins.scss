@@ -8,8 +8,9 @@
   }
 }
 
+// "laptop"
 @mixin desktop {
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1024px) {
     @content;
   }
 }
@@ -22,6 +23,7 @@
   position: relative;
   color: v.$primary;
   height: 100vh;
+  width: 100%;
   background-image: url(../assets/negative-space-black-forest-dawn.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -42,7 +44,7 @@
 
     &--sm {
       font-weight: 100;
-      padding: 10px;
+      padding: 0 8px 0 8px;
       margin-left: 20px;
       margin-right: 20px;
     }
@@ -78,13 +80,11 @@
 // Lists
 @mixin lists {
   list-style-type: none;
-  padding: 20px 0px 20px 0px;
-  margin: 10px;
 
   * {
     margin: 5px 10px 5px 0px;
     padding: 5px 0px 5px 0px;
-    font-size: 1.1em;
+    font-size: 22px;
   }
 }
 
