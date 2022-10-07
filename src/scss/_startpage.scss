@@ -51,7 +51,7 @@ html {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    width: 100%;
 
     &__titel {
       width: 100%;
@@ -59,9 +59,7 @@ html {
     }
   }
   @include mixins.desktop {
-    margin: 0 auto;
-    width: 80%;
-
+    justify-content: center;
     &__titel {
       width: 100%;
       margin-top: 10vh;
@@ -77,6 +75,12 @@ html {
   @include mixins.tablet {
     @include mixins.team;
     width: 50%;
+    gap: 20px;
+  }
+  @include mixins.desktop {
+    @include mixins.team;
+    width: 40%;
+    gap: 40px;
   }
 }
 
